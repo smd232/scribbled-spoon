@@ -121,4 +121,4 @@ git push
 
 ## Author
 
-Syed Danial Ahmed
+Syeda Maryam
