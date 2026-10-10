@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Scribbled Spoon | Spices, sweets and drinks</title>
+    <meta name="description" content="Fresh food cooked to order, from hand-ground spices to mango kulfi and cardamom chai.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='44' fill='%23F2A93B'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="wrap bar">
+            <a class="logo" href="#top"><i></i>The Scribbled Spoon</a>
+
+            <input type="checkbox" id="burger" aria-label="Toggle menu">
+            <label class="burger" for="burger">Menu</label>
+
+            <nav aria-label="Main">
+                <ul class="links">
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#menu">Spices</a></li>
+                    <li><a href="#menu">Sweets</a></li>
+                    <li><a href="#menu">Drinks</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" class="btn btn-small-pill">Cart</a></li>
+                </ul>
+                <form class="search" role="search">
+                    <input type="search" placeholder="Search dishes..." aria-label="Search dishes">
+                    <button type="submit">Search</button>
+                </form>
+            </nav>
+        </div>
+    </header>
+
+    <main id="top">
+        <section class="hero">
+            <div class="wrap hero-grid">
+                <div class="hero-text">
+                    <h1>Spices, sweets and everything in between.</h1>
+                    <p>From hand-ground spices to mango kulfi and cardamom chai, every plate is cooked to order in our open kitchen.</p>
+                    <div class="hero-buttons">
+                        <a href="#menu" class="btn btn-primary">View the menu</a>
+                        <a href="#book" class="btn btn-outline">Book a table</a>
+                    </div>
+                    <ul class="cats" aria-label="Menu categories">
+                        <li><a href="#menu" style="--c: var(--chili)">Starters</a></li>
+                        <li><a href="#menu" style="--c: var(--chili)">Mains</a></li>
+                        <li><a href="#menu" style="--c: var(--saffron)">Spices</a></li>
+                        <li><a href="#menu" style="--c: var(--rose)">Sweets</a></li>
+                        <li><a href="#menu" style="--c: var(--mint)">Drinks</a></li>
+                    </ul>
+                </div>
+
+                <div class="hero-image">
+                    <img src="images/Karahi.webp" alt="A signature dish from The Scribbled Spoon on a dark plate">
+                </div>
+            </div>
+        </section>
+
+        <section class="featured" id="featured">
+            <div class="wrap">
+                <div class="section-header">
+                    <h2>Featured Dishes</h2>
+                    <p>Our most loved meals, made fresh every day.</p>
+                </div>
+
+                <div class="featured-grid">
+                    <div class="food-card">
+                        <div class="food-card-img">
+                            <img src="images/dish1.jpg" alt="Classic Burger" loading="lazy">
+                        </div>
+                        <div class="food-card-body">
+                            <h3>Classic Burger</h3>
+                            <p>Juicy beef patty, cheese, and fresh veggies.</p>
+                            <div class="food-card-footer">
+                                <span class="price">Rs. 650</span>
+                                <a href="#" class="btn-small">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-card">
+                        <div class="food-card-img">
+                            <img src="images/dish2.jpg" alt="Margherita Pizza" loading="lazy">
+                        </div>
+                        <div class="food-card-body">
+                            <h3>Margherita Pizza</h3>
+                            <p>Stone-baked with mozzarella and basil.</p>
+                            <div class="food-card-footer">
+                                <span class="price">Rs. 1,200</span>
+                                <a href="#" class="btn-small">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-card">
+                        <div class="food-card-img">
+                            <img src="images/dish3.jpg" alt="Chicken Biryani" loading="lazy">
+                        </div>
+                        <div class="food-card-body">
+                            <h3>Chicken Biryani</h3>
+                            <p>Fragrant rice with tender spiced chicken.</p>
+                            <div class="food-card-footer">
+                                <span class="price">Rs. 450</span>
+                                <a href="#" class="btn-small">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <section class="menu" id="menu">
+    <div class="wrap">
+        <div class="section-header">
+            <h2>Our Menu</h2>
+            <p>Cooked to order, so food may take about 15 minutes. Spices come packed in jars to take home.</p>
+        </div>
+
+        <div class="menu-tabs">
+            <input type="radio" name="menu-tab" id="t1" checked aria-label="Starters">
+            <input type="radio" name="menu-tab" id="t2" aria-label="Mains">
+            <input type="radio" name="menu-tab" id="t3" aria-label="Spices">
+            <input type="radio" name="menu-tab" id="t4" aria-label="Sweets">
+            <input type="radio" name="menu-tab" id="t5" aria-label="Drinks">
+            <div class="tabs">
+                <label for="t1">Starters</label>
+                <label for="t2">Mains</label>
+                <label for="t3">Spices</label>
+                <label for="t4">Sweets</label>
+                <label for="t5">Drinks</label>
+            </div>
+
+            <div class="panels">
+                <div class="panel p1">
+                    <article class="menu-card">
+                        <div class="menu-card-img">
+                            <img src="images/samosas.jpg" alt="Crispy samosa trio" width="400" height="300" loading="lazy">
+                        </div>
+                        <h3>Crispy samosa trio</h3>
+                        <p>Potato and peas in a thin crisp shell, served with a mint dip.</p>
+                        <div class="tags"><span class="tag veg">Veg</span></div>
+                        <div class="menu-card-footer">
+                            <span class="price">Rs 450</span>
+                            <a href="#" class="btn-small">Add to Cart</a>
+                        </div>
+                    </article>
+                    <article class="menu-card">
+                        <div class="menu-card-img">
+                            <img src="images/dahi-bhalla.png" alt="Dahi bhalla stack" width="400" height="300" loading="lazy">
+                        </div>
+                        <h3>Dahi bhalla stack</h3>
+                        <p>Soft lentil rounds, cold yogurt and a tamarind drizzle.</p>
+                        <div class="tags"><span class="tag veg">Veg</span></div>
+                        <div class="menu-card-footer">
+                            <span class="price">Rs 520</span>
+                            <a href="#" class="btn-small">Add to Cart</a>
+                        </div>
+                    </article>
+                    <article class="menu-card">
+                        <div class="menu-card-img">
+                            <img src="images/chicken-tikka.jpg" alt="Chicken tikka bites" width="400" height="300" loading="lazy">
+                        </div>
+                        <h3>Chicken tikka bites</h3>
+                        <p>Charcoal grilled and finished with lemon at the table.</p>
+                        <div class="tags"><span class="tag hot">Medium</span></div>
+                        <div class="menu-card-footer">
+                            <span class="price">Rs 780</span>
+                            <a href="#" class="btn-small">Add to Cart</a>
+                        </div>
+                    </article>
+                    <article class="menu-card">
+                        <div class="menu-card-img">
+                            <img src="images/fish-pakora.png" alt="Fish pakora" width="400" height="300" loading="lazy">
+                        </div>
+                        <h3>Fish pakora</h3>
+                        <p>Crisp gram-flour batter around flaky white fish, with chutney.</p>
+                        <div class="tags"><span class="tag">Mild</span></div>
+                        <div class="menu-card-footer">
+                            <span class="price">Rs 850</span>
+                            <a href="#" class="btn-small">Add to Cart</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="panel p2">
+                    <article class="menu-card">
+                        <div class="menu-card-img">
+                            <img src="images/Karahi.webp" alt="Chicken karahi bowl" width="400" height="300" loading="lazy">
+                        </div>
+                        <h3>Chicken karahi bowl</h3>
+                        <p>Tomato, ginger and green chili in a small iron pan, with warm naan.</p>
+                        <div class="tags"><span class="tag hot">Hot</span></div>
+                        <div class="menu-card-footer">
+                            <span class="price">Rs 1,450</span>
+                            <a href="#" class="btn-small">Add to Cart</a>
+                        </div>
+                    </article>
+                    <article class="menu-card">
+                        <div class="menu-card-img">
+                            <img src="images/seekh-kebab-roll.jpg" alt="Seekh kebab roll" width="400" height="300" loading="lazy">
+                        </div>
+                        <h3>Seekh kebab roll</h3>
+                        <p>Two kebabs, onion salad and green chutney in a flaky paratha.</p>
+                        <div class="tags"><span class="tag hot">Medium</span></div>
+                        <div class="menu-card-footer">
+                            <span class="price">Rs 890</span>
+                            <a href="#" class="btn-small">Add to Cart</a>
+                        </div>
+                    </article>
+                    <article class="menu-card">
+                        <div class="menu-card-img">
+                            <img src="images/beef-nihari.jpg" alt="Beef nihari" width="400" height="300" loading="lazy">
+                        </div>
+                        <h3>Beef nihari</h3>
+                        <p>Slow-cooked overnight, served with fresh ginger and lemon.</p>
+                        <div class="tags"><span class="tag hot">Medium</span></div>
+                        <div class="menu-card-footer">
+                            <span class="price">Rs 1,350</span>
+                            <a href="#" class="btn-small">Add to Cart</a>
+                        </div>
+                    </article>
+                    <article class="menu-card">
+                        <div class="menu-card-img">
+                            <img src="images/garden-pulao.jpg" alt="Garden pulao" width="400" height="300" loading="lazy">
+                        </div>
+                        <h3>Garden pulao</h3>
+                        <p>Fragrant rice with roasted vegetables and fried onions.</p>
+                        <div class="tags"><span class="tag veg">Veg</span></div>
+                        <div class="menu-card-footer">
+                            <span class="price">Rs 980</span>
+                            <a href="#" class="btn-small">Add to Cart</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="panel p3">
+                    <article class="menu-card">
+                        <div class="menu-card-img">
+                            <img src="images/karahi-masala.jpg" alt="Karahi masala" width="400" height="300" loading="lazy">
+                        </div>
+                        <h3>Karahi masala</h3>
+                        <p>Our house blend for karahi. 100 g jar, packed fresh.</p>
+                        <div class="tags"><span class="tag hot">Hot</span></div>
+                        <div class="menu-card-footer">
+                            <span class="price">Rs 380</span>
+                            <a href="#" class="btn-small">Add to Cart</a>
+                        </div>
+                    </article>
+                    <article class="menu-card">
+                        <div class="menu-card-img">
+                            <img src="images/garam-masala.jpg" alt="Garam masala" width="400" height="300" loading="lazy">
+                        </div>
+                        <h3>Garam masala</h3>
+                        <p>Cardamom, cloves and cinnamon, hand-ground. 100 g jar.</p>
+                        <div class="tags"><span class="tag">Mild</span></div>
+                        <div class="menu-card-footer">
+                            <span class="price">Rs 450</span>
+                            <a href="#" class="btn-small">Add to Cart</a>
+                        </div>
+                    </article>
+                    <article class="menu-card">
+                        <div class="menu-card-img">
+                            <img src="images/kashmiri-chili.jpg" alt="Kashmiri red chili" width="400" height="300" loading="lazy">
+                        </div>
+                        <h3>Kashmiri red chili</h3>
+                        <p>Deep red color and gentle heat. 100 g jar.</p>
+                        <div class="tags"><span class="tag">Mild</span></div>
+                        <div class="menu-card-footer">
+                            <span class="price">Rs 320</span>
+                            <a href="#" class="btn-small">Add to Cart</a>
+                        </div>
+                    </article>
+                    <article class="menu-card">
+                        <div class="menu-card-img">
+                            <img src="images/saffron.jpg" alt="Saffron threads" width="400" height="300" loading="lazy">
+                        </div>
+                        <h3>Saffron threads</h3>
+                        <p>Pure kesar for biryani, kheer and chai. 1 g box.</p>
+                        <div class="tags"><span class="tag">Mild</span></div>
+                        <div class="menu-card-footer">
+                            <span class="price">Rs 950</span>
+                            <a href="#" class="btn-small">Add to Cart</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="panel p4">
+                    <article class="menu-card">
+                        <div class="menu-card-img">
+                            <img src="images/mango-kulfi.jpg" alt="Mango kulfi" width="400" height="300" loading="lazy">
+                        </div>
+                        <h3>Mango kulfi</h3>
+                        <p>Dense, cold and made with ripe Sindhri mangoes.</p>
+                        <div class="tags"><span class="tag">Served cold</span></div>
+                        <div class="menu-card-footer">
+                            <span class="price">Rs 480</span>
+                            <a href="#" class="btn-small">Add to Cart</a>
+                        </div>
+                    </article>
+                    <article class="menu-card">
+                        <div class="menu-card-img">
+                            <img src="images/gulab-jamun.jpg" alt="Warm gulab jamun" width="400" height="300" loading="lazy">
+                        </div>
+                        <h3>Warm gulab jamun</h3>
+                        <p>Two syrupy dumplings with a scoop of cardamom cream.</p>
+                        <div class="tags"><span class="tag">Served warm</span></div>
+                        <div class="menu-card-footer">
+                            <span class="price">Rs 420</span>
+                            <a href="#" class="btn-small">Add to Cart</a>
+                        </div>
+                    </article>
+                    <article class="menu-card">
+                        <div class="menu-card-img">
+                            <img src="images/kheer.jpg" alt="Kheer jar" width="400" height="300" loading="lazy">
+                        </div>
+                        <h3>Kheer jar</h3>
+                        <p>Rice pudding with pistachio, chilled overnight.</p>
+                        <div class="tags"><span class="tag">Served cold</span></div>
+                        <div class="menu-card-footer">
+                            <span class="price">Rs 380</span>
+                            <a href="#" class="btn-small">Add to Cart</a>
+                        </div>
+                    </article>
+                    <article class="menu-card">
+                        <div class="menu-card-img">
+                            <img src="images/shahi-tukray.jpg" alt="Shahi tukray" width="400" height="300" loading="lazy">
+                        </div>
+                        <h3>Shahi tukray</h3>
+                        <p>Fried bread soaked in saffron milk and topped with nuts.</p>
+                        <div class="tags"><span class="tag">Served warm</span></div>
+                        <div class="menu-card-footer">
+                            <span class="price">Rs 520</span>
+                            <a href="#" class="btn-small">Add to Cart</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="panel p5">
+                    <article class="menu-card">
+                        <div class="menu-card-img">
+                            <img src="images/cardamom-chai.jpg" alt="Cardamom chai" width="400" height="300" loading="lazy">
+                        </div>
+                        <h3>Cardamom chai</h3>
+                        <p>Strong black tea simmered with milk and crushed cardamom.</p>
+                        <div class="tags"><span class="tag">Served hot</span></div>
+                        <div class="menu-card-footer">
+                            <span class="price">Rs 220</span>
+                            <a href="#" class="btn-small">Add to Cart</a>
+                        </div>
+                    </article>
+                    <article class="menu-card">
+                        <div class="menu-card-img">
+                            <img src="images/mango-lassi.jpg" alt="Mango lassi" width="400" height="300" loading="lazy">
+                        </div>
+                        <h3>Mango lassi</h3>
+                        <p>Thick yogurt blended with ripe mango and a pinch of salt.</p>
+                        <div class="tags"><span class="tag">Served cold</span></div>
+                        <div class="menu-card-footer">
+                            <span class="price">Rs 380</span>
+                            <a href="#" class="btn-small">Add to Cart</a>
+                        </div>
+                    </article>
+                    <article class="menu-card">
+                        <div class="menu-card-img">
+                            <img src="images/mint-lemonade.jpg" alt="Mint lemonade" width="400" height="300" loading="lazy">
+                        </div>
+                        <h3>Mint lemonade</h3>
+                        <p>Fresh lemon, crushed mint and a little sugar over ice.</p>
+                        <div class="tags"><span class="tag">Served cold</span></div>
+                        <div class="menu-card-footer">
+                            <span class="price">Rs 320</span>
+                            <a href="#" class="btn-small">Add to Cart</a>
+                        </div>
+                    </article>
+                    <article class="menu-card">
+                        <div class="menu-card-img">
+                            <img src="images/cold-coffee.jpg" alt="Cold coffee" width="400" height="300" loading="lazy">
+                        </div>
+                        <h3>Cold coffee</h3>
+                        <p>Strong black coffee served over ice with a splash of milk.</p>
+                        <div class="tags"><span class="tag">Served cold</span></div>
+                        <div class="menu-card-footer">
+                            <span class="price">Rs 300</span>
+                            <a href="#" class="btn-small">Add to Cart</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section class="reserve" id="book">
+            <div class="wrap reserve-grid">
+                <div class="reserve-info">
+                    <h2>Book a table</h2>
+                    <p class="lead">Walk-ins are welcome. Reserve ahead for groups of six or more, or if you want a table at peak dinner hours.</p>
+                    <dl class="info">
+                        <div>
+                            <dt>Opening hours</dt>
+                            <dd>Monday to Sunday, 11 am to 12 am</dd>
+                        </div>
+                        <div>
+                            <dt>Find us</dt>
+                            <dd>Karachi, Pakistan</dd>
+                        </div>
+                        <div>
+                            <dt>Call us</dt>
+                            <dd>+92 300 0000000</dd>
+                        </div>
+                        <div>
+                            <dt>Large groups</dt>
+                            <dd>Groups of six or more, please reserve in advance</dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <!-- To receive bookings, point action at your form service (for example Formspree) or your backend -->
+                <form class="reserve-form" action="#" method="post">
+                    <h3>Reserve your table</h3>
+
+                    <div class="row2">
+                        <label class="field">
+                            <span>Full name</span>
+                            <input type="text" name="name" placeholder="Ayesha Khan" autocomplete="name" required>
+                        </label>
+                        <label class="field">
+                            <span>Phone number</span>
+                            <input type="tel" name="phone" placeholder="0300 0000000" autocomplete="tel" required>
+                        </label>
+                    </div>
+
+                    <div class="row2">
+                        <label class="field">
+                            <span>Date</span>
+                            <input type="date" name="date" required>
+                        </label>
+                        <label class="field">
+                            <span>Time</span>
+                            <input type="time" name="time" required>
+                        </label>
+                    </div>
+
+                    <label class="field">
+                        <span>Number of guests</span>
+                        <select name="guests" required>
+                            <option value="1">1 guest</option>
+                            <option value="2" selected>2 guests</option>
+                            <option value="3">3 guests</option>
+                            <option value="4">4 guests</option>
+                            <option value="5">5 guests</option>
+                            <option value="6-10">6 to 10 guests</option>
+                            <option value="10+">More than 10 guests</option>
+                        </select>
+                    </label>
+
+                    <label class="field">
+                        <span>Anything we should know?</span>
+                        <textarea name="notes" rows="3" placeholder="Birthday, high chair, seating preference..."></textarea>
+                    </label>
+
+                    <button type="submit" class="btn btn-primary">Reserve my table</button>
+                    <p class="form-note">We'll call to confirm your booking.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contact">
+        <div class="wrap footer-content">
+            <div class="footer-col footer-brand">
+                <h3>The Scribbled Spoon</h3>
+                <p>Fresh, delicious meals made with love and delivered hot to your door.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="#top">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#menu">Spices, Sweets and Drinks</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>📍 Karachi, Pakistan</p>
+                <p>📞 +92 300 0000000</p>
+                <p>✉️ info@scribbledspoon.com</p>
+                <p>🕒 Mon-Sun: 11am - 12am</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p>Get offers and new dishes in your inbox.</p>
+                <form class="footer-form">
+                    <input type="email" placeholder="Your email" aria-label="Your email">
+                    <button type="submit">Join</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="wrap footer-bottom">
+            <p>&copy; 2026 The Scribbled Spoon. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">WhatsApp</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
