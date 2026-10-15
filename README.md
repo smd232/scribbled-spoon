@@ -2,7 +2,7 @@
 
 A dark, modern, single-page restaurant website. It covers the whole menu, from starters and mains to spices, sweets and drinks, and includes a table reservation form. Built with plain HTML and CSS only: no JavaScript, no frameworks, no build step.
 
-**Live site:** https://YOUR-USERNAME.github.io/scribbled-spoon/
+**Live site:** https://smd232.github.io/scribbled-spoon/
 
 ## Features
 
