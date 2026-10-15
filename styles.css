@@ -2,18 +2,39 @@
    Headings: Philosopher. Body: Karla. */
 
 :root {
+    --bg: #FBF5EC;
+    --surface: #FFFFFF;
+    --surface-2: #F4EBDD;
+    --line: #E4D6C3;
+    --line-strong: #CDB9A0;
+    --text: #2A1F18;
+    --muted: #6B5D4F;
+    --placeholder: #9A8C7D;
+    --header-bg: rgba(251, 245, 236, .85);
+    --hot-text: #C0292E;
+    --saffron: #D98A10;
+    --chili: #E5484D;
+    --rose: #D4617F;
+    --mint: #2E8B57;
+    --display: 'Philosopher', Georgia, 'Times New Roman', serif;
+    --body: 'Karla', 'Helvetica Neue', Arial, sans-serif;
+    color-scheme: light;
+}
+
+body.dark {
     --bg: #17120F;
     --surface: #231B17;
     --surface-2: #2B211C;
     --line: #3A2E27;
+    --line-strong: #55443A;
     --text: #F2E8DA;
     --muted: #BFB3A3;
+    --placeholder: #8F8478;
+    --header-bg: rgba(23, 18, 15, .82);
+    --hot-text: #FF8B8F;
     --saffron: #F2A93B;
-    --chili: #E5484D;
     --rose: #E58BA5;
     --mint: #6DBE8C;
-    --display: 'Philosopher', Georgia, 'Times New Roman', serif;
-    --body: 'Karla', 'Helvetica Neue', Arial, sans-serif;
     color-scheme: dark;
 }
 
@@ -28,6 +49,7 @@ body {
     font-size: 1.1rem;
     line-height: 1.65;
     overflow-x: hidden;
+    transition: background .3s ease, color .3s ease;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -43,7 +65,7 @@ img { max-width: 100%; display: block; }
     position: sticky;
     top: 0;
     z-index: 20;
-    background: rgba(23, 18, 15, .82);
+    background: var(--header-bg);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--line);
@@ -80,7 +102,7 @@ nav { display: flex; align-items: center; gap: 24px; }
     background: var(--surface); border: 1px solid var(--line); border-radius: 999px;
     transition: width .35s ease, border-color .25s ease, background .25s ease;
 }
-.search input::placeholder { color: #8f8478; }
+.search input::placeholder { color: var(--placeholder); }
 .search input:focus { outline: none; width: 210px; border-color: var(--saffron); background: var(--surface-2); }
 .search button {
     font: 700 .95rem/1 var(--body); padding: 11px 18px; border-radius: 999px; cursor: pointer;
@@ -252,7 +274,7 @@ nav { display: flex; align-items: center; gap: 24px; }
 
 .tags { margin-top: auto; margin-bottom: 18px; }
 .tag { display: inline-block; font-size: .85rem; line-height: 1.5; padding: 1px 12px; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); }
-.tag.hot { color: #ff8b8f; border-color: rgba(229, 72, 77, .5); background: rgba(229, 72, 77, .1); }
+.tag.hot {color: var(--hot-text); border-color: rgba(229, 72, 77, .5); background: rgba(229, 72, 77, .1); }
 .tag.veg { color: var(--mint); border-color: rgba(109, 190, 140, .5); background: rgba(109, 190, 140, .1); }
 
 /* ---------- Reservation ---------- */
@@ -284,8 +306,8 @@ nav { display: flex; align-items: center; gap: 24px; }
     background: var(--bg); border: 1px solid var(--line); border-radius: 12px;
     transition: border-color .25s ease, box-shadow .25s ease;
 }
-.reserve-form input::placeholder, .reserve-form textarea::placeholder { color: #8f8478; }
-.reserve-form input:hover, .reserve-form select:hover, .reserve-form textarea:hover { border-color: #55443a; }
+.reserve-form input::placeholder, .reserve-form textarea::placeholder { color: var(--placeholder); }
+.reserve-form input:hover, .reserve-form select:hover, .reserve-form textarea:hover { border-color: var(--line-strong); }
 .reserve-form input:focus, .reserve-form select:focus, .reserve-form textarea:focus {
     outline: none; border-color: var(--saffron); box-shadow: 0 0 0 3px rgba(242, 169, 59, .18);
 }
@@ -334,6 +356,16 @@ nav { display: flex; align-items: center; gap: 24px; }
 .footer-social a { color: var(--muted); font-size: .95rem; transition: color .25s ease; }
 .footer-social a:hover { color: var(--saffron); }
 
+/* //theme button */
+.theme-btn {
+    width: 42px; height: 42px; padding: 0; display: grid; place-items: center;
+    font-size: 1.15rem; line-height: 1; cursor: pointer;
+    color: var(--text); background: transparent;
+    border: 1px solid var(--line); border-radius: 50%;
+    transition: border-color .25s ease, background .25s ease, transform .25s ease;
+}
+.theme-btn:hover { border-color: var(--saffron); background: rgba(242, 169, 59, .08); transform: rotate(15deg); }
+
 /* ---------- Responsive ---------- */
 @media (max-width: 1120px) {
     .burger {
@@ -371,8 +403,6 @@ nav { display: flex; align-items: center; gap: 24px; }
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { animation: none !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
 } 
-
-/* ---------- Mobile polish (keep this at the very bottom of the file) ---------- */
 
 /* mobile menu dropdown lines up with the screen edges */
 @media (max-width: 1120px) {
